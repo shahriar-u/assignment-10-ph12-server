@@ -13,9 +13,6 @@ app.use(express.json());
 
 const uri = "mongodb+srv://shahriar5703_db_user:iJ9T2PpmSdZjOMpW@cluster0.1ikjvvw.mongodb.net/?appName=Cluster0";
 
-// const uri =
-//   "mongodb+srv://admin:zJMorxLxH1hNr2pU@cluster0.h9ydkmp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-// const uri = "mongodb+srv://admin:<db_password>@cluster0.h9ydkmp.mongodb.net/?appName=Cluster0";
 
 const client = new MongoClient(uri, {
   serverApi: {
