@@ -13,8 +13,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "-": "^0.0.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^5.2.1",
+    "f": "^1.4.0",
     "mongodb": "^7.0.0",
     "nodemon": "^3.1.11"
   }
