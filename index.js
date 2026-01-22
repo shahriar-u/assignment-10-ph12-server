@@ -31,12 +31,14 @@ let db, artworkCollection, favoritesCollection;
 
 async function connectDB() {
   if (db) return { artworkCollection, favoritesCollection };
-  
+
   try {
     await client.connect();
+    // await client.db("admin").command({ ping: 1 });
     db = client.db("ArtifyDB");
     artworkCollection = db.collection("artworks");
     favoritesCollection = db.collection("favorites");
+    // console.log("✅ Pinged & Connected to MongoDB!");
     console.log("✅ Successfully connected to MongoDB!");
     return { artworkCollection, favoritesCollection };
   } catch (error) {
